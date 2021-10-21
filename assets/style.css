@@ -51,5 +51,9 @@
     top: 10%; */
     margin: 0px auto 0px auto;
     padding:5px;
-    background-color: #88acd4;
+    background-color: #a3d7f5;
+}
+
+li:not(:last-child) {
+    margin-bottom: 5px;
 }
