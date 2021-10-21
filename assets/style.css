@@ -2,7 +2,10 @@
     position: absolute;
     width: 99%;
     height: 7%;
-    background: #001AFF;
+    background: #3044ff;
+    padding-left: 20%;
+    padding-bottom: 0.2%;
+    font-size: larger;
 }
 
 .search{
@@ -10,7 +13,7 @@
     top: 8%;
     width: 34%;
     height: 9%;
-    background: #00E0FF;
+    background: #9900ff;
 }
 
 .history{
@@ -19,6 +22,7 @@
     width: 34%;
     height: 80%;
     background: #00F0FF;
+    font-weight: 700;
 }
 
 .wxCurrent{
@@ -27,14 +31,25 @@
     top: 8%;
     width: 63%;
     height: 38%;
-    background: #AAAAAA;
+    background: #a3d7f5;
+    font-weight: 700;
 }
 
-.fivedayWx{
+.fiveDayWx{
     position: absolute;
     left: 36%;
     top: 47%;
-    width: 64%;
+    width: 63%;
     height: 51%;
-    background: #C4C4C4;
+    background: #88acd4;
+    font-weight: 700;
+}
+
+#uvi{
+    display: table;
+    /* position: relative;
+    top: 10%; */
+    margin: 0px auto 0px auto;
+    padding:5px;
+    background-color: #88acd4;
 }

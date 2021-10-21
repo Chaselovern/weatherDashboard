@@ -14,22 +14,44 @@
     <aside class="sidebar">
         <div class = "search">
             <p></p>
-            <input type="search" class="form-control rounded" placeholder="City" aria-label="City"
-            aria-describedby="search-addon" />
-          <button type="button" class="btn btn-outline-primary">search</button>
+            <input class="form-control rounded" placeholder="City"/>
+            <sup class="msg"></sup>
+          <button type="button" id = 'locationBtn' class="btn btn-outline-primary">search</button>
         </div>
         <div class = "history">
             <p>History:</p>
+            <div class="history" id="historyInner"></div>
 
         </div> 
     </aside>
-    <div class = "wxCurrent">
-        <p>Todays Weather</p>
+    <div id = 'currentWx' class = "wxCurrent">
+        <div id='weather-icon'></div>
+        <div class = "wxHead"> 
+            <table>
+                <tr>
+                    <th>Today's</th>
+                    <th id='date'>Date: </th>
+                </tr>
+            </table>
+        </div>
+        <div class = "wxInfo">
+            <table>
+                <tr><th id = 'currentUVI'>UVI</th><th>Temperature</th><th>Wind</th><th>Humidity</th></tr>
+                <tr><td id = 'uvi'>UV</td><td id = 'deg'>Temperature</td><td id ='wSpeed'>Speed</td><td id ='hum'>Humidity</td></tr>
+            </table>
+        </div>
     </div>
-    <div class = "fivedayWx">
-        <p>5 Day Forcast</p>
+    <div id = "fiveDayWx" class = "fiveDayWx">
+        <p>5 Day Forecast</p>
+        <table>
+            <tr><th>Day 1</th><th>Day 2</th><th>Day 3</th><th>Day 4</th><th>Day 5</th></tr>
+            <tr><td id = 'd1Temp'></td><td id = 'd2Temp'></td><td id ='d3Temp'></td><td id ='d4Temp'></td><td id = 'd5Temp'></td></tr>
+            <tr><td id = 'd1Wnd'></td><td id = 'd2Wnd'></td><td id ='d3Wnd'></td><td id ='d4Wnd'></td><td id = 'd5Wnd'></td></tr>
+            <tr><td id = 'd1Hum'></td><td id = 'd2Hum'></td><td id ='d3Hum'></td><td id ='d4Hum'></td><td id = 'd5Hum'></td></tr>
+        </table>
     </div>
 </body>
     
 </body>
+<script src="assets\script.js"></script>
 </html>
